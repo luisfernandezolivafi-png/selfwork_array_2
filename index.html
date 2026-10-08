@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfwork Array 2</title>
+</head>
+<body>
+
+    <script>
+        let a = [3, 5, 10, 2, 8];
+
+        let media = a.reduce((somma, valore) => somma + valore, 0) / a.length;
+        let minori = a.filter(valore => valore < media);
+        let maggiori = a.filter(valore => valore > media);
+
+        console.log(`media = ${media}, valori minori = [${minori.join(", ")}]`);
+
+        console.log(`Valori minori della media: ${minori.length}`);
+        console.log(`Valori maggiori della media: ${maggiori.length}`);
+    </script>
+</body>
+</html>
